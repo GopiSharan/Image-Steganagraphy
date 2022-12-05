@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color:rgb(27, 21, 21) ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Capstone Project - II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Encode <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/decode">Decode</a>
+          </div>
+        </div>
+      </nav>
+      <br>
+<div class="container d-flex justify-items-center">
+    <h1 style="color: rgb(255, 255, 255);font-size:50px ; font-weight:400 ;font-family: Arial, Helvetica, sans-serif;">Hi, welcome to our</h1>
+ 
+    <h1><span  style="  
+    top: 40%;
+    left: 40%;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #0462c0,
+    #1bff9c, #2f67ba, #5689ef);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; font-size:50px ; font-weight:700 ;"> Image Stegnography Tool</span></h1>
+      
+     
+      <br>
+    </div>
+
+      <div class="container">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="exampleFormControlFile1" style="color: rgb(255, 255, 255)">PNG File</label>
+              <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" name="pass" placeholder="Password">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" name="secret" placeholder="Secret">
+                </div>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary" style="color: rgb(255, 255, 255)";>Hide</button>
+          </form>
+          <br>
+          <p style="color: rgb(255, 255, 255)"> Image saved at: </p>
+
+          <a href="{{url}}" target="_blank">{{url}}</a>
+        </div>
+</body>
+</html>
